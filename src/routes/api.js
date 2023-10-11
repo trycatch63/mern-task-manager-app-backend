@@ -3,8 +3,8 @@ const UsersController = require("../controllers/UserController");
 const AuthVerify = require("../middleware/AuthVerifyMiddleware");
 const TaskController = require("../controllers/TaskController");
 
+const cors = require('cors');
 const app = express();
-
 app.use(cors()); // Use this before defining your routes
 
 // Router
