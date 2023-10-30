@@ -16,7 +16,7 @@ const router = express.Router();
 // User Info
 router.post("/registration", UsersController.registration)
 router.post("/login", UsersController.login)
-router.post("/profile-update", AuthVerify,UsersController.profileUpdate)
+router.post("/profile-update",UsersController.profileUpdate)
 router.get("/profile-details", AuthVerify,UsersController.profileDetails)
 
 // Task Info
