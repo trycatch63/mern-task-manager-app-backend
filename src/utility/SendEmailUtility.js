@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 
 const SendEmailUtility = async (EmailTo,EmailText, EmailSubject) =>{
-
+    
     let transporter = nodemailer.createTransport({
 
         // By Gmail SMTP
@@ -35,3 +35,4 @@ const SendEmailUtility = async (EmailTo,EmailText, EmailSubject) =>{
 }
 
 module.exports = SendEmailUtility;
+
