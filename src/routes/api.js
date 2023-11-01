@@ -18,6 +18,7 @@ router.post("/registration", UsersController.registration)
 router.post("/login", UsersController.login)
 router.post("/profile-update", AuthVerify,UsersController.profileUpdate)
 router.get("/profile-details", AuthVerify,UsersController.profileDetails)
+router.get("/recover-verify-email/:email", UsersController.recoverVerifyEmail)
 
 // Task Info
 router.post("/add-task", AuthVerify,TaskController.createTask)
